@@ -1,0 +1,30 @@
+Checking patch drivers/gpu/drm/drm_edid.c...
+Hunk #1 succeeded at 6524 (offset 235 lines).
+Hunk #2 succeeded at 6547 (offset 235 lines).
+error: while searching for:
+	info->mso_stream_count = 0;
+	info->mso_pixel_overlap = 0;
+	info->max_dsc_bpp = 0;
+}
+
+static u32 update_display_info(struct drm_connector *connector,
+
+error: patch failed: drivers/gpu/drm/drm_edid.c:6376
+Checking patch include/drm/drm_connector.h...
+error: while searching for:
+	 * monitor's default value is used instead.
+	 */
+	u32 max_dsc_bpp;
+};
+
+int drm_display_info_set_bus_formats(struct drm_display_info *info,
+
+error: patch failed: include/drm/drm_connector.h:721
+Checking patch include/drm/drm_displayid.h...
+error: include/drm/drm_displayid.h: No such file or directory
+Applying patch drivers/gpu/drm/drm_edid.c with 1 reject...
+Hunk #1 applied cleanly.
+Hunk #2 applied cleanly.
+Rejected hunk #3.
+Applying patch include/drm/drm_connector.h with 1 reject...
+Rejected hunk #1.

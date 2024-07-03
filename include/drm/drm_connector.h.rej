@@ -1,0 +1,13 @@
+diff a/include/drm/drm_connector.h b/include/drm/drm_connector.h	(rejected hunks)
+@@ -721,6 +721,11 @@ struct drm_display_info {
+ 	 * monitor's default value is used instead.
+ 	 */
+ 	u32 max_dsc_bpp;
++	/**
++	 * @dp_dsc_bpp: DP Display-Stream-Compression (DSC) timing's target
++	 * DST bits per pixel in 6.4 fixed point format. 0 means undefined
++	 */
++	u16 dp_dsc_bpp;
+ };
+ 
+ int drm_display_info_set_bus_formats(struct drm_display_info *info,
